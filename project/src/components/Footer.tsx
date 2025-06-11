@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import logo from '../assets/LogoHorizantal.png'
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -16,7 +17,7 @@ const Footer = () => {
           <div className="lg:col-span-2">
             <div className="mb-6">
               <img 
-                src="/LogoHorizantal.png" 
+                src={logo} 
                 alt="VersaFlex India Private Limited" 
                 className="h-12 w-auto"
               />

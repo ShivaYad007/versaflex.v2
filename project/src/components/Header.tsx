@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import logo from '../assets/LogoHorizantal.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -29,7 +30,7 @@ const Header = () => {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center cursor-pointer" onClick={() => scrollToSection('hero')}>
             <img 
-              src="/LogoHorizantal.png" 
+              src={logo}
               alt="VersaFlex India Private Limited" 
               className="h-10 w-auto"
             />
